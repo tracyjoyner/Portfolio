@@ -2,156 +2,323 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sophie Bluel - Interior Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="description" content="" />
+    <title>Tracy Joyner - Web Developer Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/style.css" />
   </head>
+
   <body>
-    <div class="top-bar hidden" id="top-bar">
-      <p class="top-bar-text">
-        <i class="fa-regular fa-pen-to-square"></i>Editing Mode
-      </p>
-    </div>
-    <header>
-      <div class="nav-user-only">
-        <h1>Sophie Bluel <span>Interior Designer</span></h1>
-        <nav>
-          <ul>
-            <li><a href="#portfolio" class="nav">projects</a></li>
-            <li><a href="#contact" class="nav">contact</a></li>
-            <li>
-              <a href="login.html" class="nav" id="login">login</a>
-              <a href="index.html" class="nav hidden" id="logout">logout</a>
-            </li>
-            <li>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >T.Joyner</a
+          >
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Works</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
               <img
-                src="./assets/icons/instagram.png"
-                alt="Instagram"
-                id="instagramIcon"
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
               />
-            </li>
-          </ul>
-        </nav>
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
-    <main>
-      <section id="introduction">
-        <figure>
-          <img src="./assets/images/sophie-bluel.png" alt="" />
-        </figure>
-        <article>
-          <h2>Space Designer</h2>
-          <p>
-            I tell your story and bring your ideas to life. I work with you
-            every step of the way—from the design stage until the very end of
-            the project.
-          </p>
-          <p>
-            Together, we’ll decide on the volumes, materials, and colors, while
-            maintaining the space’s character and selection of materials. Every
-            single aspect of the project will be thoroughly monitored, ensuring
-            it remains on schedule and on budget.
-          </p>
-          <p>
-            If necessary, a multidisciplinary team can be brought into your
-            project, including an accredited architect and a decorator.
-          </p>
-        </article>
-      </section>
-      <section id="portfolio">
-        <div class="project-heading">
-          <h2>My Projects</h2>
-          <button class="modal-open hidden">
-            <i class="fa-regular fa-pen-to-square"></i>Edit
-          </button>
-        </div>
-        <div class="filter-buttons"></div>
-        <div class="gallery"></div>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Do you have a project in mind? Let’s talk about it!</p>
-        <form action="#" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <input type="submit" value="Send" />
-        </form>
-      </section>
-    </main>
 
-    <footer>
-      <nav>
-        <ul>
-          <li>Legal Notice</li>
-        </ul>
-      </nav>
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">TracyJoyner</h1>
+            <span class="hero-heading-subtitle">Web Developer</span>
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="#!">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="Link to GitHub account"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <a href="#projects" class="btn">My Portfolio</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/hero/hero.png"
+              alt="Picture of Christian Buehner taken from Unsplash</a>
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              <!-- TODO change this -->
+              Hi, I’m John Sample, a passionate designer and developer
+              specializing in web development, graphic design and photography.
+              With over 10 years of experience, I love transforming ideas into
+              impactful creations that connect and inspire. Outside of work, I
+              enjoy exploring new places, learning new skills and capturing
+              life’s moments. <br /><br />Let’s collaborate and bring your
+              vision to life!
+            </p>
+            <div class="about-download-btn">
+              <a href="#!" class="btn btn-white">Download Resume</a>
+            </div>
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">Web Design</div>
+              <div class="skill-percent">95%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">HTML/CSS</div>
+              <div class="skill-percent">90%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="90"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">JavaScript</div>
+              <div class="skill-percent">65%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="65"></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p>
+              Crafting intuitive and visually appealing user interfaces that
+              enhance experiences through thoughtful, creative designs.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Frontend Development</h3>
+            <p>
+              Developing responsive, accessible, and dynamic websites using
+              modern tools to create seamless, engaging experiences.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/03.svg" alt="" />
+            <h3 class="service-card-title">Content Writing</h3>
+            <p>
+              Creating compelling and audience-focused content that effectively
+              communicates ideas and delivers meaningful value.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">Works</h2>
+        </div>
+
+        <div class="projects-row">
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/01.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Finance Dashboard</h5>
+                  <p class="white">UI/UX Design</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/02.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Product design</h5>
+                  <p class="white">UI/UX Design</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/03.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Landing Page</h5>
+                  <p class="white">UI/UX Design, Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/04.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Portfolio</h5>
+                  <p class="white">Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+          >
+            <a href="#!">
+              <img class="project-img" src="img/works/05.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Cosmic Sea</h5>
+                  <p class="white">UI/UX Design, Web Development</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="#!">
+              <img
+                src="img/social_icons/github.svg"
+                alt="Link to GitHub account"
+              />
+            </a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright John Sample 2024</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <!-- Modal -->
-    <section class="modal hidden">
-      <div class="close-modal">
-        <button class="close-x"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div>
-        <h3 class="modal-title">Photo Gallery</h3>
-        <div class="photo-gallery"></div>
-      </div>
-      <hr />
-      <button class="modal-add-photo-button">Add a photo</button>
-    </section>
-    <section class="modal-add-photo hidden">
-      <div class="close-modal-nav">
-        <button class="back-arrow">
-          <i class="fa-solid fa-arrow-left"></i>
-        </button>
-        <button class="close-x2"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <div class="add-photo-form">
-        <form action="#" method="post" id="add-photo-form">
-          <h3 class="modal-title">Add photo</h3>
-          <div class="new-photo">
-            <i class="photo-icon fa-regular fa-image"></i>
-            <label class="add-photo-button" for="add-photo">+ Add photo</label>
-            <input
-              type="file"
-              name="add-photo"
-              id="add-photo"
-              accept=".jpg, .png"
-            />
-            <p>jpg, png: max 4 MB</p>
-          </div>
-          <label for="title">Title</label>
-          <input type="text" name="title" id="title" />
-          <label for="data-category">Category</label>
-          <select class="category-choice" name="category" id="data-category">
-            <option value="0" label=" "></option>
-          </select>
-        </form>
-      </div>
-      <hr />
-      <input id="modal-confirm" type="submit" value="Confirm" />
-    </section>
+    <div id="goToTop" class="goToTop">
+      <a href="#home">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
 
-    <div class="overlay hidden"></div>
-
-    <script src="./js/script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

@@ -294,6 +294,18 @@ h5 {
   margin-bottom: 10px;
 }
 
+.squared-title {
+  font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
+  font-weight: 400;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}
+
 .skill {
   position: relative;
   display: block;
@@ -398,6 +410,7 @@ h5 {
 
 .project-box a {
   display: inline-block;
+  box-shadow: #565a5b;
 }
 
 .project-box:hover .project-mask {
@@ -419,7 +432,6 @@ h5 {
 .project-img {
   transform: scale(1);
   width: 100%;
-  box-shadow: #565a5b;
   transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
 }
 

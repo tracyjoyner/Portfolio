@@ -4,7 +4,7 @@
 :root {
   --primary-bg-color: #f7fbfd;
   --primary-accent: #0c1618;
-  --secondary-accent: #6f1d1b;
+  --secondary-accent: #054fb9;
 
   --main-text-color: #0c1618;
   --supportive-text-color: #242d2f;
@@ -367,7 +367,7 @@ h5 {
   text-align: center;
 }
 
-/* Works */
+/* Projects */
 .projects {
   padding: 7rem 0;
   background-color: var(--primary-bg-color);
@@ -381,6 +381,8 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10rem;
+  border-radius: 10rem;
 }
 
 .project-box {

@@ -390,6 +390,7 @@ h5 {
   display: block;
   max-width: 510px;
   border-radius: 5px;
+  box-shadow: #565a5b;
 }
 
 .project-box a {

@@ -119,6 +119,14 @@
   }
 
   .nav-list {
+    display: flex;
+    column-gap: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.15px;
+  }
+
+  /* .nav-list {
     display: none;
   }
 
@@ -158,7 +166,7 @@
 
   .nav.open .nav-btn {
     position: fixed;
-  }
+  } */
 
   .header-nav {
     margin-bottom: 0;

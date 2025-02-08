@@ -467,6 +467,11 @@ h5 {
   opacity: 0;
 }
 
+.project-caption img {
+  width: 10px;
+  height: 10px;
+}
+
 .project-mask p {
   text-transform: uppercase;
   font-size: 11px;

@@ -186,7 +186,7 @@ h5 {
   color: var(--main-text-color);
 }
 
-.nav-link.active {
+.nav-link:active .nav-link:hover {
   text-decoration: underline;
   text-decoration-color: var(--secondary-accent);
   text-decoration-thickness: 1.2px;

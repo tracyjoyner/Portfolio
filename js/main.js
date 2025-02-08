@@ -20,12 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       nav.className = "nav";
     }
-
-    if (nav.classList.toggle("open")) {
-      navBtnImg.src = "img/icons/close.svg";
-    } else {
-      navBtnImg.src = "img/icons/open.svg";
-    }
+    // if (nav.classList.toggle("open")) {
+    //   navBtnImg.src = "img/icons/close.svg";
+    // } else {
+    //   navBtnImg.src = "img/icons/open.svg";
+    // }
   };
 
   x.className += " responsive";

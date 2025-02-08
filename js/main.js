@@ -15,12 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Hamburger menu
   navBtn.onclick = () => {
+    if (nav.className === "nav") {
+      nav.className += " open";
+    } else {
+      nav.className = "nav";
+    }
+
     if (nav.classList.toggle("open")) {
       navBtnImg.src = "img/icons/close.svg";
     } else {
       navBtnImg.src = "img/icons/open.svg";
     }
   };
+
+  x.className += " responsive";
 
   window.addEventListener("scroll", function () {
     const header = document.querySelector("#header");

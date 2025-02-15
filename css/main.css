@@ -450,7 +450,7 @@ h5 {
 
 .project-mask p {
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1.5px;
   font-weight: 400;
   margin-top: 0;
@@ -461,8 +461,8 @@ h5 {
   position: absolute;
   bottom: -60px;
   left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: left;
   transition: all 0.5s ease-in-out 0s;
   opacity: 0;
@@ -474,7 +474,7 @@ h5 {
 }
 
 .project-mask .problem-solution {
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 1.5px;
   font-weight: 400;
   margin-top: 0;
